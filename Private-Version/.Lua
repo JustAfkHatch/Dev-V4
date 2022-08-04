@@ -19,7 +19,7 @@
     end)
     ChangeLogsSection:Label("(+) Adding More Games Soon!", function(Red)
     end)
-    ChangeLogsSection:Label("(+) Added Key Copy (PSX) (MS2)", function(Red)
+    ChangeLogsSection:Label("(+) Added Key Copy (PSX) (MS2),If your lazy like me", function(Red)
     end)
     ChangeLogsSection:Label("(-) Moved 4 Sections of Scripts to GameHub", function(Red)
     end)

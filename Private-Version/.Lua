@@ -32,9 +32,7 @@
     local BedwarsSection = Tab:Channel("Bedwars")
     BedwarsSection:Label("🟩 Working! 🟧 In Development! 🟥 Patched!", function(v)
     end)
-    BedwarsSection:Label("🟩🟩 Always Working!", function(v)
-    end)
-    BedwarsSection:Textbox("🟩🟩Walkspeed,Heatseeker", "Default : 16", "", function (value)
+    BedwarsSection:Textbox("🟩Walkspeed,Heatseeker", "Default : 16/23", "", function (value)
 	game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Use This for Heatseeker (OP)", Icon = "rbxassetid://10470552407", Duration = 5})
     	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
     end)

@@ -98,7 +98,7 @@
     end)
     PSXSection:Button("🟩 Project Meow (Okay)", function(v)
 	game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Project Meow Key Copied!", Icon = "rbxassetid://10470552407", Duration = 5})
-	setclipboard("psx update sucks")
+	setclipboard("LoveYouMana_fdsjhigtdxhcgxvdc89jkgdfhjgvbdcnjsghdf")
         loadstring(game:HttpGet"https://raw.githubusercontent.com/L1ZOT/Neverlose/main/Project-Meow_TEMP")()
     end)
     PSXSection:Button("🟩 Ultra Hub (Okay)", function(v)

@@ -9,7 +9,7 @@
     -- Main
 
     wait(0.4)
-    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Dev V4 Version = (V4.1.5)", Icon = "rbxassetid://10470552407", Duration = 5})
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Dev V4 Version = (V4.1.7)", Icon = "rbxassetid://10470552407", Duration = 5})
     wait(0.2)
     game.StarterGui:SetCore("SendNotification", {Title = "👑 Enjoy Dev V4 👑", Text = "Dev V4 Finished Loading!", Icon = "rbxassetid://10470552407", Duration = 5})
 
@@ -17,22 +17,28 @@
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
     ChangeLogsSection:Label("Smallest Update 😎,Updates Will be 0.5 Per", function(Red)
     end)
-    ChangeLogsSection:Label("(+) Adding More Games Soon!", function(Red)
+    ChangeLogsSection:Label("(+) Added Engoware Script,The Future Script Is Gone Now", function(Red)
     end)
     ChangeLogsSection:Label("(+) Added Key Copy (PSX) (MS2),If your lazy like me", function(Red)
     end)
-    ChangeLogsSection:Label("(-) Moved 4 Sections of Scripts to GameHub", function(Red)
+    ChangeLogsSection:Label("(-) Removed Hoho Hub From (bedwars)", function(Red)
     end)
-    ChangeLogsSection:Label("(-) Removed Noboline (Bedwars)", function(Red)
+    ChangeLogsSection:Label("(+) Added Walkspeed For Bedwars and Others", function(Red)
     end)
 
     -- Bedwars
 
 
     local BedwarsSection = Tab:Channel("Bedwars")
-    BedwarsSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched!", function(v)
+    BedwarsSection:Label("🟩 Working! 🟧 In Development! 🟥 Patched!", function(v)
     end)
-    BedwarsSection:Button("🟩Sape (Fucking THE BEST)", function(v)
+    BedwarsSection:Label("🟩🟩 Always Working!", function(v)
+    end)
+    BedwarsSection:Textbox("🟩🟩Walkspeed,Heatseeker", "Default : 16", "", function (value)
+	game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Use This for Heatseeker (OP)", Icon = "rbxassetid://10470552407", Duration = 5})
+    	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+    end)
+    BedwarsSection:Button("🟩Sape (Fucking Op)", function(v)
           loadstring(game:HttpGet("https://raw.githubusercontent.com/vodxn/sape/main/Initiate.lua"))()
     end)
     BedwarsSection:Button("🟩Vape V4 (Best)", function(v)
@@ -42,11 +48,8 @@
 	shared.VapePrivate = true
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
     end)
-    BedwarsSection:Button("🤷‍♂️🟧EngoWare (Best)", function(v)
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
-    end)
-    BedwarsSection:Button("🟩HoHo Hub (Idk if Works)", function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    BedwarsSection:Button("🟩EngoWare (Best)", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/engoware/main/Main.lua"))()
     end)
 
 -- Pet Simulator X

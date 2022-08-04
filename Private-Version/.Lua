@@ -155,13 +155,14 @@ end)
 	game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Vestra Key Copied!", Icon = "rbxassetid://10470552407", Duration = 5})
 	setclipboard("Vstra.V5_d9b34c5dcc1b1cbe")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
-    end)
+end)
     MiningSim2Section:Button("🟩🟧 HugeGames (Best)", function(v)
 getgenv().AuthKey="HUGE_wDp2O6304GTlCH0n"
 getgenv().LoadSettings={
 UseSeperateSaves=false
 }
 loadstring(game:HttpGet("https://HugeGames.io/ms2"))()
+end)
     MiningSim2Section:Button("🟩 Zeerox Gui (Old And Buggy)", function(v)
         loadstring(game:HttpGet'https://github.com/RunDTM/miningsim2/raw/main/script.lua')()
     end)

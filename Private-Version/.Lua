@@ -17,6 +17,8 @@
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
     ChangeLogsSection:Label("Added Sape,and Break In Section", function(Red)
     end)
+    ChangeLogsSection:Label("Added Best,Trash and Okay to Some Sections", function(Red)
+    end)
 
     local MainSection = Tab:Channel("Other Scripts")
     MainSection:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
@@ -117,6 +119,31 @@
         loadstring(game:HttpGet("https://pastebin.com/raw/CKbPg9NC", true))()
     end)
 
+
+    -- Bedwars
+
+
+    local BedwarsSection = Tab:Channel("Bedwars")
+    BedwarsSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched!", function(v)
+    end)
+    BedwarsSection:Button("🟩Sape (Fucking THE BEST)", function(v)
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/vodxn/sape/main/Initiate.lua"))()
+    end)
+    BedwarsSection:Button("🟩Vape V4 (Best)", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end)
+    BedwarsSection:Button("🟩Zyle Config (Best)", function(v)
+	shared.VapePrivate = true
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end)
+    BedwarsSection:Button("🤷‍♂️🟧EngoWare (Best)", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+    end)
+    BedwarsSection:Button("🟩Noboline (Trash)", function(v)
+        shared.nobolineupdate = true
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end)
+
 -- Pet Simulator X
 
 
@@ -204,66 +231,42 @@ end)
     local MiningSim2Section = Tab:Channel("Mining Simulator 2")
     MiningSim2Section:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
     end)
-    MiningSim2Section:Button("🟩 Zeerox (Rewrotten Version)", function(v)
+    MiningSim2Section:Button("🟩 Zeerox (Best--Rewrite)", function(v)
         loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')()
     end)
-    MiningSim2Section:Button("🟩 System Exodus", function(v)
+    MiningSim2Section:Button("🟩 System Exodus (Best)", function(v)
       	loadstring(game:HttpGet("https://system-exodus.com/scripts/MiningSimulator/MiningSimulator2.lua", true))()
     end)
-    MiningSim2Section:Button("🟩 Vestra Hub", function(v)
+    MiningSim2Section:Button("🟩 Vestra Hub (Best)", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
     end)
-    MiningSim2Section:Button("🟩 Zeerox Gui (Old And Buggy)", function(v)
-        loadstring(game:HttpGet'https://github.com/RunDTM/miningsim2/raw/main/script.lua')()
-    end)
-    MiningSim2Section:Button("🟩 Kelp Hub (Key)", function(v)
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/MaGiXxScripter/Cum-Hub/main/loader'))()
-    end)
-    MiningSim2Section:Button("🟩 TR1V5 Software", function(v)
-        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TR1V5/TR1V5-Software-V4/main/Main"))()
-    end)
-    MiningSim2Section:Button("🟩🟧 HugeGames", function(v)
+    MiningSim2Section:Button("🟩🟧 HugeGames (Best)", function(v)
 getgenv().AuthKey="HUGE_wDp2O6304GTlCH0n"
 getgenv().LoadSettings={
 UseSeperateSaves=false
 }
 loadstring(game:HttpGet("https://HugeGames.io/ms2"))()
+    MiningSim2Section:Button("🟩 Zeerox Gui (Old And Buggy)", function(v)
+        loadstring(game:HttpGet'https://github.com/RunDTM/miningsim2/raw/main/script.lua')()
     end)
-    MiningSim2Section:Button("🟩 Saza Hub V2", function(v)
+    MiningSim2Section:Button("🟩 Kelp Hub (Best+Key)", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/MaGiXxScripter/Cum-Hub/main/loader'))()
+    end)
+    MiningSim2Section:Button("🟩 TR1V5 Software (Okay)", function(v)
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TR1V5/TR1V5-Software-V4/main/Main"))()
+    end)
+    end)
+    MiningSim2Section:Button("🟩 Saza Hub V2 (Okay)", function(v)
 	loadstring(game:HttpGet"https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/ScriptLoader.saza")()
     end)
-    MiningSim2Section:Button("🟩 SoggyWare", function(v)
+    MiningSim2Section:Button("🟩 SoggyWare (Okay)", function(v)
         loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
     end)
-    MiningSim2Section:Button("🟩 Extreme Hub (Key)", function(v)
+    MiningSim2Section:Button("🟩 Extreme Hub (Okay+Key)", function(v)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
     end)
-    MiningSim2Section:Button("🟩 PhantomHub (Kinda Buggy)", function(v)
+    MiningSim2Section:Button("🟩 PhantomHub (Okay)", function(v)
        loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
-    end)
-
-    -- Bedwars
-
-
-    local BedwarsSection = Tab:Channel("Bedwars")
-    BedwarsSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched!", function(v)
-    end)
-    BedwarsSection:Button("🟩Sape (BetterKillAura)", function(v)
-          loadstring(game:HttpGet("https://raw.githubusercontent.com/vodxn/sape/main/Initiate.lua"))()
-    end)
-    BedwarsSection:Button("🟩Vape V4", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
-    end)
-    BedwarsSection:Button("🟩Zylex Config (Basically Vape)", function(v)
-	shared.VapePrivate = true
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
-    end)
-    BedwarsSection:Button("🤷‍♂️🟧EngoWare", function(v)
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
-    end)
-    BedwarsSection:Button("🟩Noboline", function(v)
-        shared.nobolineupdate = true
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
     end)
 
 

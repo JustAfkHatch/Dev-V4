@@ -9,21 +9,19 @@
     -- Main
 
     wait(0.4)
-    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Dev V4 Version = (V4.1.7)", Icon = "rbxassetid://10470552407", Duration = 5})
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Dev V4 Version = (V4.1.8)", Icon = "rbxassetid://10470552407", Duration = 5})
     wait(0.2)
     game.StarterGui:SetCore("SendNotification", {Title = "👑 Enjoy Dev V4 👑", Text = "Dev V4 Finished Loading!", Icon = "rbxassetid://10470552407", Duration = 5})
 
     local Tab = window:Server("Dev V4", "rbxassetid://10470552407")
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
-    ChangeLogsSection:Label("Smallest Update 😎,Updates Will be 0.5 Per", function(Red)
-    end)
-    ChangeLogsSection:Label("(+) Added Engoware Script,The Future Script Is Gone Now", function(Red)
+    ChangeLogsSection:Label("(+) Small Update Will be 0.5 Per Update,Big updates will be 1 per update", function(Red)
     end)
     ChangeLogsSection:Label("(+) Added Key Copy (PSX) (MS2),If your lazy like me", function(Red)
     end)
-    ChangeLogsSection:Label("(-) Removed Hoho Hub From (bedwars)", function(Red)
-    end)
     ChangeLogsSection:Label("(+) Added Walkspeed For Bedwars and Others", function(Red)
+    end)
+    ChangeLogsSection:Label("(+) Added JumpPower For Bedwars and Others", function(Red)
     end)
 
     -- Bedwars
@@ -36,8 +34,17 @@
 	game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Use This for Heatseeker (OP)", Icon = "rbxassetid://10470552407", Duration = 5})
     	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
     end)
-    BedwarsSection:Button("🟩Sape (Fucking Op)", function(v)
-          loadstring(game:HttpGet("https://raw.githubusercontent.com/vodxn/sape/main/Initiate.lua"))()
+    BedwarsSection:Textbox("🟩JumpPower", "Default : 50/Unknown", "", function (value)
+	game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Try it Out Idk Mon", Icon = "rbxassetid://10470552407", Duration = 5})
+    	game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+    end)
+    BedwarsSection:Button("🟩Inf Jump", function(v)
+    local InfiniteJumpEnabled = true
+    game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+            end
+        end)
     end)
     BedwarsSection:Button("🟩Vape V4 (Best)", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
@@ -412,14 +419,6 @@ end)
     end)
     MainSection:Button("🟩Dex Explorer", function(v)
         loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
-    end)
-    MainSection:Button("🟩Inf Jump", function(v)
-    local InfiniteJumpEnabled = true
-    game:GetService("UserInputService").JumpRequest:connect(function()
-            if InfiniteJumpEnabled then
-                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
-            end
-        end)
     end)
     MainSection:Button("🟩Fe Animations", function(v)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/RubyBoo4life/Scripts/main/animations.vis'))()

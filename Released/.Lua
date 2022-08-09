@@ -15,9 +15,7 @@
 
     local Tab = window:Server("Dev V4", "rbxassetid://10470552407")
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
-    ChangeLogsSection:Label("(-) Removed Some Key Copy", function(Red)
-    end)
-    ChangeLogsSection:Label("(-) Removed Some Not Working Scripts", function(Red)
+    ChangeLogsSection:Label("(+) Releasing Da Hood Scripts :O", function(Red)
     end)
 
     -- Bedwars
@@ -29,10 +27,6 @@
     BedwarsSection:Textbox("🟩Walkspeed,Heatseeker", "Default : 16/23", "", function (value)
 	game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Use This for Heatseeker (OP)", Icon = "rbxassetid://10470552407", Duration = 5})
     	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
-    end)
-    BedwarsSection:Textbox("🟩JumpPower", "Default : 50/Unknown", "", function (value)
-	game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Try it Out Idk Mon", Icon = "rbxassetid://10470552407", Duration = 5})
-    	game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
     end)
     BedwarsSection:Button("🟩Inf Jump", function(v)
     local InfiniteJumpEnabled = true
@@ -154,8 +148,6 @@ end)
       	loadstring(game:HttpGet("https://system-exodus.com/scripts/MiningSimulator/MiningSimulator2.lua", true))()
     end)
     MiningSim2Section:Button("🟩 Vestra Hub (Best)", function(v)
-	game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Vestra Key Copied!", Icon = "rbxassetid://10470552407", Duration = 5})
-	setclipboard("Vstra.V5_d9b34c5dcc1b1cbe")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
 end)
     MiningSim2Section:Button("🟩🟧 HugeGames (Best)", function(v)
